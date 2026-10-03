@@ -49,6 +49,12 @@
 
   /* ---------- title ---------- */
   header.title { text-align: center; padding: 64px 0 28px; }
+  .links { margin: 20px 0 0; }
+  .links a {
+    display: inline-block; padding: 7px 18px; border: 1px solid var(--accent); border-radius: 999px;
+    color: var(--accent); font-weight: 600; font-size: 14px; letter-spacing: .04em; text-decoration: none;
+  }
+  .links a:hover { background: var(--gold-soft); }
   .eyebrow {
     font-size: 13px; letter-spacing: .14em; text-transform: uppercase;
     color: var(--accent); font-weight: 600; margin: 0 0 14px;
@@ -202,6 +208,7 @@
 <header class="title wrap">
   <p class="eyebrow">Golden Tickets</p>
   <h1>Improving Generative Robot Policies With A Single Noise Vector</h1>
+  <p class="links"><a href="https://github.com/golden-tickets/golden-ticket-search" target="_blank" rel="noopener">Code</a></p>
 </header>
 
 <!-- 1. Real-robot hook -->
@@ -212,7 +219,7 @@
       <video src="media/piston/base.mp4" poster="media/piston/base.jpg" autoplay muted loop playsinline></video>
     </figure>
     <div class="bridge">
-      <p class="q">Can a single noise vector influence policy performance?</p>
+      <p class="q">Can a single, well-chosen noise vector consistently perform better than random sampling?</p>
       <svg class="arrow-right" viewBox="0 0 190 34" aria-hidden="true">
         <line x1="6" y1="17" x2="172" y2="17" stroke="var(--gold)" stroke-width="3.5" stroke-linecap="round"/>
         <path d="M160 6 L182 17 L160 28" fill="none" stroke="var(--gold)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -293,7 +300,7 @@
   <p class="note">Both columns run the same frozen GR00T N1.5 checkpoint. Scores count successes over the three episodes shown here, not the full evaluation.</p>
 
   <details class="block" id="tickets">
-    <summary>Per-seed search results</summary>
+    <summary>Per-Seed Search Results</summary>
     <div class="body">
       <div class="wide-table">
       <table class="stat-table">
@@ -324,7 +331,7 @@
   <section id="details">
     <h2>Experimental Details and Results</h2>
     <details class="block">
-      <summary>Summary of experimental benchmarks</summary>
+      <summary>Summary of Experimental Benchmarks</summary>
       <div class="body">
         <p>The table below summarizes our benchmark suite.</p>
         <div class="wide-table">
@@ -346,7 +353,7 @@
     </details>
 
     <details class="block">
-      <summary>Existence proof for golden tickets</summary>
+      <summary>Empirical Proof for Existence of Golden Tickets</summary>
       <div class="body">
         <p><strong>Golden tickets outperform Gaussian noise in 46 out of 51 tasks, and at least match it in 49:</strong>
           The table below summarizes per-benchmark base and best-golden-ticket performance, per-task search
@@ -422,7 +429,7 @@
     </details>
 
     <details class="block">
-      <summary>Statistical significance of the improvement rate</summary>
+      <summary>Statistical Significance of the Improvement Rate</summary>
       <div class="body">
         <p>For each of the \(n=51\) tasks \(i\), we define a binary outcome \(X_i=1\) if the best searched noise vector strictly outperforms the base (Gaussian noise) policy on the held-out evaluation, and \(X_i=0\) otherwise. Modeling \(X_i \stackrel{\text{iid}}{\sim} \mathrm{Bernoulli}(p)\), we test</p>
         <div class="formula">\[ H_0\!:\ p \le 0.5 \quad\text{vs.}\quad H_1\!:\ p > 0.5, \]</div>
@@ -435,7 +442,7 @@
     </details>
 
     <details class="block">
-      <summary>Performance improvement with golden tickets</summary>
+      <summary>Performance Improvement With Golden Tickets</summary>
       <div class="body">
         <p>Beyond whether golden tickets improve over Gaussian sampling, we ask: <em>above what base policy performance do golden tickets reliably improve task success?</em> Concretely, we seek the lowest base policy floor \(T^\star\) such that, among the task&ndash;policy pairs whose base success rate is at least \(T^\star\), at least \(90\%\) are pushed past a high absolute success bar by their golden ticket. We instantiate &ldquo;high&rdquo; at two levels- \(G \in \{90, 97\}\%\).</p>
         <p>For a base floor \(T\) and absolute bar \(G\), let</p>
