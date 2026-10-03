@@ -304,20 +304,18 @@
     <div class="body">
       <div class="wide-table">
       <table class="stat-table">
-        <caption>SimplerEnv (WidowX). <strong>Gold</strong>: best held-out success rate (\(\%\), \(300\) episodes) in that seed's CEM run; <strong>\(N\)</strong>: CEM candidates evaluated.</caption>
+        <caption>SimplerEnv (WidowX) results over three search seeds. <strong>Gold</strong>: best held-out success rate (\(\%\), \(300\) episodes) in each seed's CEM run; <strong>\(N\)</strong>: CEM candidates evaluated in each run.</caption>
         <thead>
-          <tr><th class="txt" rowspan="2">Task</th><th rowspan="2">Base</th><th class="avg-col" rowspan="2">Avg.<br>Gold</th>
-              <th colspan="2">Seed \(999\)</th><th colspan="2">Seed \(1000\)</th><th colspan="2">Seed \(1001\)</th></tr>
-          <tr><th>Gold</th><th class="n-col">\(N\)</th><th>Gold</th><th class="n-col">\(N\)</th><th>Gold</th><th class="n-col">\(N\)</th></tr>
+          <tr><th class="txt">Task</th><th>Base</th><th class="avg-col">Avg.<br>Gold</th><th>Gold</th><th class="n-col">\(N\)</th></tr>
         </thead>
         <tbody>
-            <tr><td class="txt"><code>close_drawer</code></td><td>\(65\)</td><td class="avg-col">\(99.2\)</td><td>\(99.0\)</td><td class="n-col">\(11\)</td><td>\(98.7\)</td><td class="n-col">\(16\)</td><td>\(100.0\)</td><td class="n-col">\(6\)</td></tr>
-            <tr><td class="txt"><code>put_eggplant_in_basket</code></td><td>\(63\)</td><td class="avg-col">\(91.7\)</td><td>\(96.0\)</td><td class="n-col">\(16\)</td><td>\(93.3\)</td><td class="n-col">\(32\)</td><td>\(85.7\)</td><td class="n-col">\(14\)</td></tr>
-            <tr><td class="txt"><code>put_eggplant_in_sink</code></td><td>\(21\)</td><td class="avg-col">\(69.3\)</td><td>\(67.7\)</td><td class="n-col">\(270\)</td><td>\(64.0\)</td><td class="n-col">\(27\)</td><td>\(76.3\)</td><td class="n-col">\(100\)</td></tr>
-            <tr><td class="txt"><code>stack_cube</code></td><td>\(54\)</td><td class="avg-col">\(71.3\)</td><td>\(71.7\)</td><td class="n-col">\(230\)</td><td>\(73.7\)</td><td class="n-col">\(69\)</td><td>\(68.7\)</td><td class="n-col">\(27\)</td></tr>
-            <tr><td class="txt"><code>carrot_on_plate</code></td><td>\(72\)</td><td class="avg-col">\(74.3\)</td><td>\(78.7\)</td><td class="n-col">\(150\)</td><td>\(51.3\)</td><td class="n-col">\(106\)</td><td>\(93.0\)</td><td class="n-col">\(81\)</td></tr>
-            <tr><td class="txt"><code>spoon_on_towel</code></td><td>\(82\)</td><td class="avg-col">\(79.9\)</td><td>\(77.3\)</td><td class="n-col">\(230\)</td><td>\(72.3\)</td><td class="n-col">\(53\)</td><td>\(90.0\)</td><td class="n-col">\(66\)</td></tr>
-            <tr><td class="txt"><code>open_drawer</code></td><td>\(84\)</td><td class="avg-col">\(95.7\)</td><td>\(96.0\)</td><td class="n-col">\(183\)</td><td>\(97.3\)</td><td class="n-col">\(121\)</td><td>\(93.7\)</td><td class="n-col">\(144\)</td></tr>
+            <tr><td class="txt"><code>close_drawer</code></td><td>\(65\)</td><td class="avg-col">\(99.2\)</td><td>\(99.0/98.7/100.0\)</td><td class="n-col">\(11/16/6\)</td></tr>
+            <tr><td class="txt"><code>put_eggplant_in_basket</code></td><td>\(63\)</td><td class="avg-col">\(91.7\)</td><td>\(96.0/93.3/85.7\)</td><td class="n-col">\(16/32/14\)</td></tr>
+            <tr><td class="txt"><code>put_eggplant_in_sink</code></td><td>\(21\)</td><td class="avg-col">\(69.3\)</td><td>\(67.7/64.0/76.3\)</td><td class="n-col">\(270/27/100\)</td></tr>
+            <tr><td class="txt"><code>stack_cube</code></td><td>\(54\)</td><td class="avg-col">\(71.3\)</td><td>\(71.7/73.7/68.7\)</td><td class="n-col">\(230/69/27\)</td></tr>
+            <tr><td class="txt"><code>carrot_on_plate</code></td><td>\(72\)</td><td class="avg-col">\(74.3\)</td><td>\(78.7/51.3/93.0\)</td><td class="n-col">\(150/106/81\)</td></tr>
+            <tr><td class="txt"><code>spoon_on_towel</code></td><td>\(82\)</td><td class="avg-col">\(79.9\)</td><td>\(77.3/72.3/90.0\)</td><td class="n-col">\(230/53/66\)</td></tr>
+            <tr><td class="txt"><code>open_drawer</code></td><td>\(84\)</td><td class="avg-col">\(95.7\)</td><td>\(96.0/97.3/93.7\)</td><td class="n-col">\(183/121/144\)</td></tr>
         </tbody>
       </table>
       </div>
